@@ -106,13 +106,13 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 |Question | How can we represent the system in an **architecture diagram**, which gives information both about the Docker containers, the communication protocols and the commands? |
 | | *Insert your diagram here...* |
 |Question | Who is going to **send UDP datagrams** and **when**? |
-| | *Enter your response here...* |
+| | Musicians each time the play their instrument |
 |Question | Who is going to **listen for UDP datagrams** and what should happen when a datagram is received? |
-| | *Enter your response here...* |
+| | Auditors are listening to Musicians UDP datagrams. When they reicive the datagram, they keep a track of Musicians. |
 |Question | What **payload** should we put in the UDP datagrams? |
-| | *Enter your response here...* |
+| | The Musican uuid and the instrument sound. |
 |Question | What **data structures** do we need in the UDP sender and receiver? When will we update these data structures? When will we query these data structures? |
-| | *Enter your response here...* |
+| | A Musician will store its uuid and instrument sound. It will be generated once when we create the Musician. The Auditor will keep an Array of JSON containing the musician uuid, musician instrument and the last time the musician emitted a sound. |
 
 
 ## Task 2: implement a "musician" Node.js application
@@ -120,21 +120,21 @@ When you connect to the TCP interface of the **Auditor**, you should receive an 
 | #  | Topic |
 | ---  | --- |
 |Question | In a JavaScript program, if we have an object, how can we **serialize it in JSON**? |
-| | *Enter your response here...*  |
+| | `JSON.stringify(obj);` |
 |Question | What is **npm**?  |
-| | *Enter your response here...*  |
+| | NPM - Node Package Manager - It's a package manager allowing you to add useful packages.  |
 |Question | What is the `npm install` command and what is the purpose of the `--save` flag?  |
-| | *Enter your response here...*  |
+| | The `npm install` allows you to install a packge stored on NPM. The `--save` flag will add the package as a dependency of your project. Dependencies are stored in `package.json`. (Since NPM 5, the `--save` flag is implicit) |
 |Question | How can we use the `https://www.npmjs.com/` web site?  |
-| | *Enter your response here...*  |
+| | You can search for a specific package or find for a package with key words. |
 |Question | In JavaScript, how can we **generate a UUID** compliant with RFC4122? |
-| | *Enter your response here...*  |
+| | With the page `uuid` available on NPM. |
 |Question | In Node.js, how can we execute a function on a **periodic** basis? |
-| | *Enter your response here...*  |
+| | With the `setInterval(fn, ms);` method. |
 |Question | In Node.js, how can we **emit UDP datagrams**? |
-| | *Enter your response here...*  |
+| | Once you have created an UDP4 socket with `dgram.createSocket('udp4')`, you can use the method `socket.send(msg[, offset, length][, port][, address][, callback])`. |
 |Question | In Node.js, how can we **access the command line arguments**? |
-| | *Enter your response here...*  |
+| | Command line arguments are stored in `process.argv` wich is an array. |
 
 
 ## Task 3: package the "musician" app in a Docker image

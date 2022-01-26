@@ -142,15 +142,16 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | #        | Topic                                                                               |
 | -------- | ----------------------------------------------------------------------------------- |
 | Question | How do we **define and build our own Docker image**?                                |
-|          | _Enter your response here..._                                                       |
+|          | The build process is defined in a `Dockerfile` and we build it using                |
+|          | `docker build -t <image-name> /path/to/folder`.                                     |
 | Question | How can we use the `ENTRYPOINT` statement in our Dockerfile?                        |
-|          | _Enter your response here..._                                                       |
+|          | `ENTRYPOINT ["cmd", "param1", "param2" ]`                                           |
 | Question | After building our Docker image, how do we use it to **run containers**?            |
-|          | _Enter your response here..._                                                       |
+|          | `docker run <image-name>`                                                           |
 | Question | How do we get the list of all **running containers**?                               |
-|          | _Enter your response here..._                                                       |
+|          | `docker ps`                                                                         |
 | Question | How do we **stop/kill** one running container?                                      |
-|          | _Enter your response here..._                                                       |
+|          | `docker kill <container-name>`                                                      |
 | Question | How can we check that our running containers are effectively sending UDP datagrams? |
 |          | _Enter your response here..._                                                       |
 
@@ -159,22 +160,22 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | #        | Topic                                                                                              |
 | -------- | -------------------------------------------------------------------------------------------------- |
 | Question | With Node.js, how can we listen for UDP datagrams in a multicast group?                            |
-|          | _Enter your response here..._                                                                      |
+|          |                                                   |
 | Question | How can we use the `Map` built-in object introduced in ECMAScript 6 to implement a **dictionary**? |
-|          | _Enter your response here..._                                                                      |
+|          | `const map = new Map(); map.set("key", "value");`                                                  |
 | Question | How can we use the `Moment.js` npm module to help us with **date manipulations** and formatting?   |
-|          | _Enter your response here..._                                                                      |
+|          | We didn't use `Moment` as the built-in `Date.prototype.toISOString` function gives out the wanted format. |
 | Question | When and how do we **get rid of inactive players**?                                                |
-|          | _Enter your response here..._                                                                      |
+|          | Using a timeout that lasts 5 seconds starting when the last packet was sent and and then removing it from the `Map`. |
 | Question | How do I implement a **simple TCP server** in Node.js?                                             |
-|          | _Enter your response here..._                                                                      |
+|          | Using the `net` built-in package.                                                                  |
 
 ## Task 5: package the "auditor" app in a Docker image
 
 | #        | Topic                                                                                |
 | -------- | ------------------------------------------------------------------------------------ |
 | Question | How do we validate that the whole system works, once we have built our Docker image? |
-|          | _Enter your response here..._                                                        |
+|          | Run the `validate.sh` script.                                                        |
 
 ## Constraints
 

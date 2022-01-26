@@ -3,8 +3,5 @@
   "version": "1.0.0",
   "author": "Tobie Praz & Damiano Mondaini",
   "license": "ISC",
-  "type": "module",
-  "dependencies": {
-    "uuid": "^8.3.2"
-  }
+  "type": "module"
 }

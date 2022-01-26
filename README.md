@@ -153,14 +153,14 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | Question | How do we **stop/kill** one running container?                                      |
 |          | `docker kill <container-name>`                                                      |
 | Question | How can we check that our running containers are effectively sending UDP datagrams? |
-|          | _Enter your response here..._                                                       |
+|          | Checking `tcpdump` output and looking for UDP packets on the configured multicast address |
 
 ## Task 4: implement an "auditor" Node.js application
 
 | #        | Topic                                                                                              |
 | -------- | -------------------------------------------------------------------------------------------------- |
 | Question | With Node.js, how can we listen for UDP datagrams in a multicast group?                            |
-|          |                                                   |
+|          | `const server = dgram.createSocket({ type: "udp4" }); server.addMembership(MULTICAST_ADDRESS);`    |
 | Question | How can we use the `Map` built-in object introduced in ECMAScript 6 to implement a **dictionary**? |
 |          | `const map = new Map(); map.set("key", "value");`                                                  |
 | Question | How can we use the `Moment.js` npm module to help us with **date manipulations** and formatting?   |

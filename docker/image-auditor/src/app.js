@@ -1,11 +1,11 @@
-import dgrm from "dgram";
+import dgram from "dgram";
 import { createServer } from "net";
 import protocol from "./protocol.js";
 
 const musicians = new Map();
 const timeouts = new Map();
 
-const server = dgrm.createSocket({ type: "udp4" });
+const server = dgram.createSocket({ type: "udp4" });
 server.bind(protocol.PORT, () => {
     console.log("AUDITOR STARTED");
     server.addMembership(protocol.MULTICAST_ADDRESS);

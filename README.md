@@ -129,7 +129,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | Question | How can we use the `https://www.npmjs.com/` web site?                               |
 | | You can search for a specific package or find for a package with key words. |
 | Question | In JavaScript, how can we **generate a UUID** compliant with RFC4122?               |
-| | With the page `uuid` available on NPM. |
+| | With the package `uuid` available on NPM. |
 | Question | In Node.js, how can we execute a function on a **periodic** basis?                  |
 | | With the `setInterval(fn, ms);` method. |
 | Question | In Node.js, how can we **emit UDP datagrams**?                                      |
@@ -175,7 +175,8 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | #        | Topic                                                                                |
 | -------- | ------------------------------------------------------------------------------------ |
 | Question | How do we validate that the whole system works, once we have built our Docker image? |
-|          | Run the `validate.sh` script.                                                        |
+|          | Run the `validate.sh` script. Run the validate.sh script.
+Or use tcpdump to capture datagrams over the network.                                                        |
 
 ## Constraints
 

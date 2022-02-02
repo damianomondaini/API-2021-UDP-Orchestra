@@ -175,8 +175,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | #        | Topic                                                                                |
 | -------- | ------------------------------------------------------------------------------------ |
 | Question | How do we validate that the whole system works, once we have built our Docker image? |
-|          | Run the `validate.sh` script. Run the validate.sh script.
-Or use tcpdump to capture datagrams over the network.                                                        |
+|          | Run the `validate.sh` script. Or use tcpdump to capture datagrams over the network.  |
 
 ## Constraints
 
